@@ -10,25 +10,31 @@
 
 <script id="z-slider-figure-tmpl" type="text/x-handlebars-template">
 	<nav>
-		<div class="left" data-action="slide-prev">p</div>
-		<div class="right" data-action="slide-next">n</div>
+		<div class="left" data-action="slide-prev"></div>
+		<div class="right" data-action="slide-next"></div>
 	</nav>
 	<div class="slides">
 	{{#each images}}
 		<div>
-			<img src="{{src}}">
+			<img src="{{url}}">
 		</div>
 	{{/each}}
 	</div>
 </script>
 
 <script id="z-slider-nav-tmpl" type="text/x-handlebars-template">
-	<a class="left" data-action="slide-prev"></a>
-	<a class="right" data-action="slide-next"></a>
+	<div class="left" data-action="line-right"></div>
+	<div class="right" data-action="line-left"></div>
 	<section class="thumbs">
+		<div class="thumbs-line">
 		{{#each images}}
-			<div class="thumb" data-action="slide-set" data-index="{{@index}}" style="background-image:url('{{src}}')"></div>
+			<div class="thumb-wrap">
+				<div class="thumb-padding">
+					<div class="thumb" data-action="slide-set" data-index="{{@index}}" style="background-image:url('{{url}}')"></div>
+				</div>
+			</div>
 		{{/each}}
+		</div>
 	</section>
 </script>
 

@@ -7,10 +7,12 @@ body {
     width: 640px;
     height: 480px;
     position: relative;
+    margin: 17px 15px 11px 17px;
 }
 
 .z-slider-container > figure {
     overflow: hidden;
+    margin: 0 0 12px;
 }
 .z-slider-container > figure > nav {
     position: absolute;
@@ -25,21 +27,26 @@ body {
     height: 100%;
     position: absolute;
     top: 0;
+    cursor: pointer;
 }
 
 .z-slider-container > figure > nav div.left {
     left: 0;
+    background: url('../img/left.png') no-repeat 30px center;
 }
 .z-slider-container > figure > nav div.right {
     right: 0;
+    background: url('../img/right.png') no-repeat 240px center;
 }
 
 .z-slider-container > figure > .slides {
-    width: 640px;
+    width: 638px;
     height: 479px;
     border: 1px solid #999;
     overflow: hidden;
+    position: relative;
 }
+
 .z-slider-container > figure > .slides > div {
     width: 100%;
     height: 100%;
@@ -50,4 +57,68 @@ body {
 .z-slider-container > figure > .slides > div img {
     height: 100%;
     width: auto;
+}
+.z-slider-container > nav {
+    margin: 0 -1px;
+}
+
+.z-slider-container > nav .thumbs {
+    margin: 0 25px;
+    overflow: hidden;
+    width: 592px;
+    height: 85px;
+    position: relative;
+}
+
+.z-slider-container > nav .thumbs .thumbs-line {
+    position: absolute;
+}
+
+.z-slider-container > nav .thumbs .thumbs-line .thumb-wrap {
+    float: left;
+}
+
+.z-slider-container > nav .thumbs .thumbs-line .thumb-wrap .thumb-padding {
+    padding: 5px;
+}
+.z-slider-container > nav .thumbs .thumbs-line .thumb-wrap .thumb {
+    width: 98px;
+    height: 73px;
+    border: 1px solid #a1a1a1;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.z-slider-container > nav .thumbs .thumbs-line .thumb-wrap.active .thumb {
+    border-color: #555;
+    box-shadow: 2px 2px 3px #000;
+}
+
+.z-slider-container > nav {
+    position: relative;
+}
+
+.z-slider-container > nav .left,
+.z-slider-container > nav .right {
+    position: absolute;
+    width: 25px;
+    height: 75px;
+    top: 0;
+    text-align: center;
+    cursor: pointer;
+    background-color: #dbdbdb;
+    margin: 5px 0;
+}
+.z-slider-container > nav .left:hover,
+.z-slider-container > nav .right:hover {
+    background-color: #999999;
+}
+
+.z-slider-container > nav .left {
+    left: 0;
+    background: url('../img/arrow-left.png') no-repeat center center #dbdbdb;
+}
+.z-slider-container > nav .right {
+    right: 0;
+    background: url('../img/arrow-right.png') no-repeat center center #dbdbdb;
 }
