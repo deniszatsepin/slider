@@ -1,0 +1,27 @@
+{
+  "name": "jquery.slider",
+  "version": "0.0.1",
+  "authors": [
+    "Denis Zatsepin <denis@zatsepin.spb.ru>"
+  ],
+  "description": "Plugin for create slider.",
+  "main": "js/jquery.slider.js",
+  "keywords": [
+    "slider presentation"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "js/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "*",
+    "handlebars": "*",
+    "lodash": "*"
+  }
+}
