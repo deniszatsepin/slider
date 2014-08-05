@@ -46,7 +46,7 @@ module.exports = function(grunt) {
       main: {
         files: [
           {expand: true, cwd: 'bower_components/lodash/dist/', src: ['lodash.js'], dest: 'js/lib/'},
-          {expand: true, cwd: 'bower_components/jquery/', src: ['jquery.js'], dest: 'js/lib/'},
+          {expand: true, cwd: 'bower_components/jquery/dist/', src: ['jquery.js'], dest: 'js/lib/'},
           {expand: true, cwd: 'bower_components/handlebars/', src: ['handlebars.js'], dest: 'js/lib/'},
           {expand: true, cwd: '.tmp/js/', src: ['*.js'], dest: 'js/'}
         ]
